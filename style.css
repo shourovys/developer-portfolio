@@ -9,7 +9,8 @@
 }
 /* --------------------------------------------section */
 .section {
-  margin: 4rem;
+  margin: 10% 8% 10% 10%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,11 +24,11 @@
   width: 95%;
 }
 /* --------------------------------------------section1  */
-#section1::before {
+body {
+  background: url(/img/top-banner.png) no-repeat;
   content: "";
 
-  background-image: url(/img/top-banner.png);
-  background-repeat: no-repeat;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -44,19 +45,24 @@
 /* --------------------------------------------section3 */
 #section3 p {
   margin: 5px;
+  margin-bottom: 6px;
 }
 #section3 ::before {
+  background: url(/img/exp-bg.png) no-repeat;
   content: "";
-  background: url(/img/exp-bg.png);
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .box {
-  height: 15rem;
-  width: 30rem;
+  /* height: 15rem;
+  width: 30rem; */
   border-radius: 5px;
   box-shadow: 0px 1px 10px 2px rgb(88, 40, 65);
   margin: 0rem 2rem;
   padding: 15px 20px;
-  border-left: 3px solid linear-gradient(rgb(255, 123, 0), rgb(255, 0, 4));
+  border-left: 5px solid rgb(255, 0, 4);
 }
 
 /* --------------------------------------------utility class */
@@ -84,4 +90,8 @@
 }
 .center {
   text-align: center;
+}
+.h-down {
+  position: relative;
+  top: 70px;
 }
